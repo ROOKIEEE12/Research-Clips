@@ -1,0 +1,47 @@
+{
+  "name": "research-clips",
+  "version": "0.1.0",
+  "description": "Stop context switching. Clip, synthesize, and archive research directly from your workflow.",
+  "type": "module",
+  "bin": {
+    "clip": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "cli",
+    "research",
+    "obsidian",
+    "markdown",
+    "llm",
+    "clipper"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
+    "@mozilla/readability": "^0.6.0",
+    "commander": "^15.0.0",
+    "jsdom": "^30.1.3",
+    "turndown": "^7.2.4",
+    "unpdf": "^1.9.1",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.5",
+    "@types/turndown": "^5.0.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
